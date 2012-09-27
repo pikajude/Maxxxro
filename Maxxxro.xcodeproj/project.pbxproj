@@ -1,0 +1,303 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		17D6114E1613690B00CE9262 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17D6114D1613690B00CE9262 /* Cocoa.framework */; };
+		17D611581613690B00CE9262 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 17D611561613690B00CE9262 /* InfoPlist.strings */; };
+		17D6115A1613690B00CE9262 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D611591613690B00CE9262 /* main.m */; };
+		17D6115E1613690B00CE9262 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 17D6115C1613690B00CE9262 /* Credits.rtf */; };
+		17D611611613690B00CE9262 /* MXAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D611601613690B00CE9262 /* MXAppDelegate.m */; };
+		17D611641613690B00CE9262 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17D611621613690B00CE9262 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		17D611491613690B00CE9262 /* Maxxxro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Maxxxro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		17D6114D1613690B00CE9262 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		17D611501613690B00CE9262 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		17D611511613690B00CE9262 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		17D611521613690B00CE9262 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		17D611551613690B00CE9262 /* Maxxxro-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Maxxxro-Info.plist"; sourceTree = "<group>"; };
+		17D611571613690B00CE9262 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		17D611591613690B00CE9262 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		17D6115B1613690B00CE9262 /* Maxxxro-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Maxxxro-Prefix.pch"; sourceTree = "<group>"; };
+		17D6115D1613690B00CE9262 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		17D6115F1613690B00CE9262 /* MXAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MXAppDelegate.h; sourceTree = "<group>"; };
+		17D611601613690B00CE9262 /* MXAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MXAppDelegate.m; sourceTree = "<group>"; };
+		17D611631613690B00CE9262 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		17D611461613690B00CE9262 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17D6114E1613690B00CE9262 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		17D6113E1613690B00CE9262 = {
+			isa = PBXGroup;
+			children = (
+				17D611531613690B00CE9262 /* Maxxxro */,
+				17D6114C1613690B00CE9262 /* Frameworks */,
+				17D6114A1613690B00CE9262 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		17D6114A1613690B00CE9262 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				17D611491613690B00CE9262 /* Maxxxro.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		17D6114C1613690B00CE9262 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				17D6114D1613690B00CE9262 /* Cocoa.framework */,
+				17D6114F1613690B00CE9262 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		17D6114F1613690B00CE9262 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				17D611501613690B00CE9262 /* AppKit.framework */,
+				17D611511613690B00CE9262 /* CoreData.framework */,
+				17D611521613690B00CE9262 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		17D611531613690B00CE9262 /* Maxxxro */ = {
+			isa = PBXGroup;
+			children = (
+				17D6115F1613690B00CE9262 /* MXAppDelegate.h */,
+				17D611601613690B00CE9262 /* MXAppDelegate.m */,
+				17D611621613690B00CE9262 /* MainMenu.xib */,
+				17D611541613690B00CE9262 /* Supporting Files */,
+			);
+			path = Maxxxro;
+			sourceTree = "<group>";
+		};
+		17D611541613690B00CE9262 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				17D611551613690B00CE9262 /* Maxxxro-Info.plist */,
+				17D611561613690B00CE9262 /* InfoPlist.strings */,
+				17D611591613690B00CE9262 /* main.m */,
+				17D6115B1613690B00CE9262 /* Maxxxro-Prefix.pch */,
+				17D6115C1613690B00CE9262 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		17D611481613690B00CE9262 /* Maxxxro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17D611671613690B00CE9262 /* Build configuration list for PBXNativeTarget "Maxxxro" */;
+			buildPhases = (
+				17D611451613690B00CE9262 /* Sources */,
+				17D611461613690B00CE9262 /* Frameworks */,
+				17D611471613690B00CE9262 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Maxxxro;
+			productName = Maxxxro;
+			productReference = 17D611491613690B00CE9262 /* Maxxxro.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		17D611401613690B00CE9262 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MX;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = Joel;
+			};
+			buildConfigurationList = 17D611431613690B00CE9262 /* Build configuration list for PBXProject "Maxxxro" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 17D6113E1613690B00CE9262;
+			productRefGroup = 17D6114A1613690B00CE9262 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				17D611481613690B00CE9262 /* Maxxxro */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		17D611471613690B00CE9262 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17D611581613690B00CE9262 /* InfoPlist.strings in Resources */,
+				17D6115E1613690B00CE9262 /* Credits.rtf in Resources */,
+				17D611641613690B00CE9262 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		17D611451613690B00CE9262 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17D6115A1613690B00CE9262 /* main.m in Sources */,
+				17D611611613690B00CE9262 /* MXAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		17D611561613690B00CE9262 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17D611571613690B00CE9262 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		17D6115C1613690B00CE9262 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17D6115D1613690B00CE9262 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		17D611621613690B00CE9262 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17D611631613690B00CE9262 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		17D611651613690B00CE9262 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		17D611661613690B00CE9262 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		17D611681613690B00CE9262 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Maxxxro/Maxxxro-Prefix.pch";
+				INFOPLIST_FILE = "Maxxxro/Maxxxro-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		17D611691613690B00CE9262 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Maxxxro/Maxxxro-Prefix.pch";
+				INFOPLIST_FILE = "Maxxxro/Maxxxro-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		17D611431613690B00CE9262 /* Build configuration list for PBXProject "Maxxxro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17D611651613690B00CE9262 /* Debug */,
+				17D611661613690B00CE9262 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17D611671613690B00CE9262 /* Build configuration list for PBXNativeTarget "Maxxxro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17D611681613690B00CE9262 /* Debug */,
+				17D611691613690B00CE9262 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 17D611401613690B00CE9262 /* Project object */;
+}
