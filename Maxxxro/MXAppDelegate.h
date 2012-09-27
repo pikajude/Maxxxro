@@ -7,9 +7,24 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import <ApplicationServices/ApplicationServices.h>
+#import "MXIntervalTransformer.h"
+#import "MXDurationTransformer.h"
 
-@interface MXAppDelegate : NSObject <NSApplicationDelegate>
+@interface MXAppDelegate : NSObject <NSApplicationDelegate> {
+    CGEventRef _start;
+    CGEventRef _stop;
+    NSTimer *timer;
+}
 
 @property (assign) IBOutlet NSWindow *window;
+
+@property (assign) IBOutlet NSTextField *interval;
+@property (assign) IBOutlet NSTextField *duration;
+
+- (void)startMacro;
+- (void)stopMacro;
+
+- (void)press;
 
 @end

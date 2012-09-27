@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1714AAA41613E39A0044D14B /* MXDurationTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1714AAA31613E39A0044D14B /* MXDurationTransformer.m */; };
+		1714AAA81613E3AC0044D14B /* MXIntervalTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1714AAA71613E3AC0044D14B /* MXIntervalTransformer.m */; };
 		17D6114E1613690B00CE9262 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17D6114D1613690B00CE9262 /* Cocoa.framework */; };
 		17D611581613690B00CE9262 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 17D611561613690B00CE9262 /* InfoPlist.strings */; };
 		17D6115A1613690B00CE9262 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D611591613690B00CE9262 /* main.m */; };
@@ -16,6 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1714AAA21613E39A0044D14B /* MXDurationTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXDurationTransformer.h; sourceTree = "<group>"; };
+		1714AAA31613E39A0044D14B /* MXDurationTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXDurationTransformer.m; sourceTree = "<group>"; };
+		1714AAA61613E3AC0044D14B /* MXIntervalTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXIntervalTransformer.h; sourceTree = "<group>"; };
+		1714AAA71613E3AC0044D14B /* MXIntervalTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXIntervalTransformer.m; sourceTree = "<group>"; };
 		17D611491613690B00CE9262 /* Maxxxro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Maxxxro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17D6114D1613690B00CE9262 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		17D611501613690B00CE9262 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -82,6 +88,10 @@
 		17D611531613690B00CE9262 /* Maxxxro */ = {
 			isa = PBXGroup;
 			children = (
+				1714AAA61613E3AC0044D14B /* MXIntervalTransformer.h */,
+				1714AAA71613E3AC0044D14B /* MXIntervalTransformer.m */,
+				1714AAA21613E39A0044D14B /* MXDurationTransformer.h */,
+				1714AAA31613E39A0044D14B /* MXDurationTransformer.m */,
 				17D6115F1613690B00CE9262 /* MXAppDelegate.h */,
 				17D611601613690B00CE9262 /* MXAppDelegate.m */,
 				17D611621613690B00CE9262 /* MainMenu.xib */,
@@ -169,6 +179,8 @@
 			files = (
 				17D6115A1613690B00CE9262 /* main.m in Sources */,
 				17D611611613690B00CE9262 /* MXAppDelegate.m in Sources */,
+				1714AAA41613E39A0044D14B /* MXDurationTransformer.m in Sources */,
+				1714AAA81613E3AC0044D14B /* MXIntervalTransformer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +308,7 @@
 				17D611691613690B00CE9262 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
