@@ -272,6 +272,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Maxxxro/Maxxxro-Prefix.pch";
 				INFOPLIST_FILE = "Maxxxro/Maxxxro-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -284,6 +285,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Maxxxro/Maxxxro-Prefix.pch";
 				INFOPLIST_FILE = "Maxxxro/Maxxxro-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
