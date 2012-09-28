@@ -9,7 +9,7 @@
 #import "MXAppDelegate.h"
 
 static CGEventRef keyDownCallback(CGEventTapProxy prox, CGEventType type, CGEventRef event, void *refcon) {
-    if(8 == CGEventGetIntegerValueField(event, kCGKeyboardEventKeycode)) {
+    if([[[(MXAppDelegate *)refcon butt] selectedItem] tag] == CGEventGetIntegerValueField(event, kCGKeyboardEventKeycode)) {
         if(0 == CGEventGetIntegerValueField(event, kCGKeyboardEventAutorepeat))
             [(MXAppDelegate *)refcon startMacro];
         return NULL;
@@ -18,7 +18,7 @@ static CGEventRef keyDownCallback(CGEventTapProxy prox, CGEventType type, CGEven
 }
 
 static CGEventRef keyUpCallback(CGEventTapProxy proxy, CGEventType type, CGEventRef event, void *refcon) {
-    if(8 == CGEventGetIntegerValueField(event, kCGKeyboardEventKeycode)) {
+    if([[[(MXAppDelegate *)refcon butt] selectedItem] tag] == CGEventGetIntegerValueField(event, kCGKeyboardEventKeycode)) {
         if(0 == CGEventGetIntegerValueField(event, kCGKeyboardEventAutorepeat))
             [(MXAppDelegate *)refcon stopMacro];
         return NULL;
@@ -37,6 +37,8 @@ static CGEventRef keyUpCallback(CGEventTapProxy proxy, CGEventType type, CGEvent
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
+    [[NSUserDefaults standardUserDefaults] registerDefaults:@{@"interval": @150, @"duration": @100, @"button": @8}];
+    
     _start = CGEventCreateKeyboardEvent(NULL, 7, YES);
     _stop = CGEventCreateKeyboardEvent(NULL, 7, NO);
     
@@ -65,20 +67,24 @@ static CGEventRef keyUpCallback(CGEventTapProxy proxy, CGEventType type, CGEvent
 
 - (void)startMacro
 {
-    timer = [NSTimer scheduledTimerWithTimeInterval:[[[NSUserDefaults standardUserDefaults] objectForKey:@"interval"] floatValue] / 1000 target:self selector:@selector(press) userInfo:nil repeats:YES];
+    timer = [NSTimer scheduledTimerWithTimeInterval:([[[NSUserDefaults standardUserDefaults] objectForKey:@"interval"] floatValue] + [[[NSUserDefaults standardUserDefaults] objectForKey:@"duration"] floatValue]) / 1000 target:self selector:@selector(press) userInfo:nil repeats:YES];
+    [timer fire];
 }
 
 - (void)stopMacro
 {
+    if(timer == nil) return;
     [self retain];
     [timer invalidate];
+    timer = nil;
 }
 
 - (void)press
 {
     CGEventPost(kCGHIDEventTap, _start);
-    [NSThread sleepForTimeInterval:[[[NSUserDefaults standardUserDefaults] objectForKey:@"duration"] floatValue] / 1000];
-    CGEventPost(kCGHIDEventTap, _stop);
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, [[[NSUserDefaults standardUserDefaults] objectForKey:@"interval"] floatValue] * 1000000), dispatch_get_main_queue(), ^{
+        CGEventPost(kCGHIDEventTap, _stop);
+    });
 }
 
 @end

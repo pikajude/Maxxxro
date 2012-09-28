@@ -22,6 +22,8 @@
 @property (assign) IBOutlet NSTextField *interval;
 @property (assign) IBOutlet NSTextField *duration;
 
+@property (assign) IBOutlet NSPopUpButton *butt;
+
 - (void)startMacro;
 - (void)stopMacro;
 
