@@ -9,7 +9,7 @@
 #import "MXAppDelegate.h"
 
 static CGEventRef keyDownCallback(CGEventTapProxy prox, CGEventType type, CGEventRef event, void *refcon) {
-    if([[[(MXAppDelegate *)refcon butt] selectedItem] tag] == CGEventGetIntegerValueField(event, kCGKeyboardEventKeycode)) {
+    if([(MXAppDelegate *)refcon keyCode] == CGEventGetIntegerValueField(event, kCGKeyboardEventKeycode)) {
         if(0 == CGEventGetIntegerValueField(event, kCGKeyboardEventAutorepeat))
             [(MXAppDelegate *)refcon startMacro];
         return NULL;
@@ -18,7 +18,7 @@ static CGEventRef keyDownCallback(CGEventTapProxy prox, CGEventType type, CGEven
 }
 
 static CGEventRef keyUpCallback(CGEventTapProxy proxy, CGEventType type, CGEventRef event, void *refcon) {
-    if([[[(MXAppDelegate *)refcon butt] selectedItem] tag] == CGEventGetIntegerValueField(event, kCGKeyboardEventKeycode)) {
+    if([(MXAppDelegate *)refcon keyCode] == CGEventGetIntegerValueField(event, kCGKeyboardEventKeycode)) {
         if(0 == CGEventGetIntegerValueField(event, kCGKeyboardEventAutorepeat))
             [(MXAppDelegate *)refcon stopMacro];
         return NULL;
@@ -35,9 +35,24 @@ static CGEventRef keyUpCallback(CGEventTapProxy proxy, CGEventType type, CGEvent
     [super dealloc];
 }
 
+- (IBAction)pickKey:(id)sender
+{
+    [self updateKeyButtons:[sender tag]];
+}
+
+- (void)updateKeyButtons:(NSInteger)keyCode
+{
+    self.zButton.state = keyCode == 6;
+    self.cButton.state = keyCode == 8;
+    self.spaceButton.state = keyCode == 49;
+    
+    [[NSUserDefaults standardUserDefaults] setInteger:keyCode forKey:@"macroKey"];
+    self.keyCode = keyCode;
+}
+
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    [[NSUserDefaults standardUserDefaults] registerDefaults:@{@"interval": @150, @"duration": @100, @"button": @8}];
+    [[NSUserDefaults standardUserDefaults] registerDefaults:@{@"interval": @150, @"duration": @100, @"macroKey": @8}];
     
     _start = CGEventCreateKeyboardEvent(NULL, 7, YES);
     _stop = CGEventCreateKeyboardEvent(NULL, 7, NO);
@@ -65,6 +80,11 @@ static CGEventRef keyUpCallback(CGEventTapProxy proxy, CGEventType type, CGEvent
             options:@{NSValueTransformerBindingOption: [[[MXDurationTransformer alloc] init] autorelease], NSContinuouslyUpdatesValueBindingOption: @YES}];
 }
 
+- (void)awakeFromNib
+{
+    [self updateKeyButtons:[[[NSUserDefaults standardUserDefaults] objectForKey:@"macroKey"] integerValue]];
+}
+
 - (void)startMacro
 {
     timer = [NSTimer scheduledTimerWithTimeInterval:([[[NSUserDefaults standardUserDefaults] objectForKey:@"interval"] floatValue] + [[[NSUserDefaults standardUserDefaults] objectForKey:@"duration"] floatValue]) / 1000 target:self selector:@selector(press) userInfo:nil repeats:YES];
@@ -82,7 +102,7 @@ static CGEventRef keyUpCallback(CGEventTapProxy proxy, CGEventType type, CGEvent
 - (void)press
 {
     CGEventPost(kCGHIDEventTap, _start);
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, [[[NSUserDefaults standardUserDefaults] objectForKey:@"interval"] floatValue] * 1000000), dispatch_get_main_queue(), ^{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, [[[NSUserDefaults standardUserDefaults] objectForKey:@"duration"] floatValue] * 1000000), dispatch_get_main_queue(), ^{
         CGEventPost(kCGHIDEventTap, _stop);
     });
 }

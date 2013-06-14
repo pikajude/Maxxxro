@@ -22,7 +22,15 @@
 @property (assign) IBOutlet NSTextField *interval;
 @property (assign) IBOutlet NSTextField *duration;
 
-@property (assign) IBOutlet NSPopUpButton *butt;
+@property (assign) IBOutlet NSButton *cButton;
+@property (assign) IBOutlet NSButton *zButton;
+@property (assign) IBOutlet NSButton *spaceButton;
+
+@property (assign) NSInteger keyCode;
+
+- (IBAction)pickKey:(id)sender;
+
+- (void)updateKeyButtons:(NSInteger)keyCode;
 
 - (void)startMacro;
 - (void)stopMacro;

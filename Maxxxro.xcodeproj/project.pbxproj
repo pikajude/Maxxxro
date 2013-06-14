@@ -15,6 +15,11 @@
 		17D6115E1613690B00CE9262 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 17D6115C1613690B00CE9262 /* Credits.rtf */; };
 		17D611611613690B00CE9262 /* MXAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D611601613690B00CE9262 /* MXAppDelegate.m */; };
 		17D611641613690B00CE9262 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17D611621613690B00CE9262 /* MainMenu.xib */; };
+		8F276B70176A234900D0799D /* MXKeyButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F276B6F176A234900D0799D /* MXKeyButtonCell.m */; };
+		8F276B79176A64D400D0799D /* MXKeyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F276B78176A64D400D0799D /* MXKeyButton.m */; };
+		8F5D6D1C17699EF1009B5F70 /* MXDemoCatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5D6D1B17699EF1009B5F70 /* MXDemoCatcher.m */; };
+		8F7B609F17699130003247F2 /* MXDemoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7B609E17699130003247F2 /* MXDemoView.m */; };
+		8FC50408176AC51B00B2C22C /* Maxxxro.icns in Resources */ = {isa = PBXBuildFile; fileRef = 8FC50407176AC51B00B2C22C /* Maxxxro.icns */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +40,15 @@
 		17D6115F1613690B00CE9262 /* MXAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MXAppDelegate.h; sourceTree = "<group>"; };
 		17D611601613690B00CE9262 /* MXAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MXAppDelegate.m; sourceTree = "<group>"; };
 		17D611631613690B00CE9262 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		8F276B6E176A234900D0799D /* MXKeyButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXKeyButtonCell.h; sourceTree = "<group>"; };
+		8F276B6F176A234900D0799D /* MXKeyButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXKeyButtonCell.m; sourceTree = "<group>"; };
+		8F276B77176A64D400D0799D /* MXKeyButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXKeyButton.h; sourceTree = "<group>"; };
+		8F276B78176A64D400D0799D /* MXKeyButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXKeyButton.m; sourceTree = "<group>"; };
+		8F5D6D1A17699EF1009B5F70 /* MXDemoCatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXDemoCatcher.h; sourceTree = "<group>"; };
+		8F5D6D1B17699EF1009B5F70 /* MXDemoCatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXDemoCatcher.m; sourceTree = "<group>"; };
+		8F7B609D17699130003247F2 /* MXDemoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXDemoView.h; sourceTree = "<group>"; };
+		8F7B609E17699130003247F2 /* MXDemoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXDemoView.m; sourceTree = "<group>"; };
+		8FC50407176AC51B00B2C22C /* Maxxxro.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Maxxxro.icns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +66,7 @@
 		17D6113E1613690B00CE9262 = {
 			isa = PBXGroup;
 			children = (
+				8FC50407176AC51B00B2C22C /* Maxxxro.icns */,
 				17D611531613690B00CE9262 /* Maxxxro */,
 				17D6114C1613690B00CE9262 /* Frameworks */,
 				17D6114A1613690B00CE9262 /* Products */,
@@ -95,6 +110,14 @@
 				17D6115F1613690B00CE9262 /* MXAppDelegate.h */,
 				17D611601613690B00CE9262 /* MXAppDelegate.m */,
 				17D611621613690B00CE9262 /* MainMenu.xib */,
+				8F276B77176A64D400D0799D /* MXKeyButton.h */,
+				8F276B78176A64D400D0799D /* MXKeyButton.m */,
+				8F276B6E176A234900D0799D /* MXKeyButtonCell.h */,
+				8F276B6F176A234900D0799D /* MXKeyButtonCell.m */,
+				8F5D6D1A17699EF1009B5F70 /* MXDemoCatcher.h */,
+				8F5D6D1B17699EF1009B5F70 /* MXDemoCatcher.m */,
+				8F7B609D17699130003247F2 /* MXDemoView.h */,
+				8F7B609E17699130003247F2 /* MXDemoView.m */,
 				17D611541613690B00CE9262 /* Supporting Files */,
 			);
 			path = Maxxxro;
@@ -167,6 +190,7 @@
 				17D611581613690B00CE9262 /* InfoPlist.strings in Resources */,
 				17D6115E1613690B00CE9262 /* Credits.rtf in Resources */,
 				17D611641613690B00CE9262 /* MainMenu.xib in Resources */,
+				8FC50408176AC51B00B2C22C /* Maxxxro.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +205,10 @@
 				17D611611613690B00CE9262 /* MXAppDelegate.m in Sources */,
 				1714AAA41613E39A0044D14B /* MXDurationTransformer.m in Sources */,
 				1714AAA81613E3AC0044D14B /* MXIntervalTransformer.m in Sources */,
+				8F7B609F17699130003247F2 /* MXDemoView.m in Sources */,
+				8F5D6D1C17699EF1009B5F70 /* MXDemoCatcher.m in Sources */,
+				8F276B70176A234900D0799D /* MXKeyButtonCell.m in Sources */,
+				8F276B79176A64D400D0799D /* MXKeyButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

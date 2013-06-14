@@ -12,7 +12,12 @@
 
 - (id)transformedValue:(id)value
 {
-    return [NSString stringWithFormat:@"%ld ms between kicks", [value integerValue]];
+    NSMutableAttributedString *str = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%ld ms between kicks", [value integerValue]]];
+    NSShadow *textShadow = [[[NSShadow alloc] init] autorelease];
+    [textShadow setShadowBlurRadius:1.f];
+    [textShadow setShadowOffset:NSMakeSize(0.f, -1.f)];
+    [str addAttribute:NSShadowAttributeName value:textShadow range:NSMakeRange(0, [str length])];
+    return str;
 }
 
 @end
