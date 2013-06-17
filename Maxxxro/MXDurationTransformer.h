@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+@class MXAppDelegate;
+
 @interface MXDurationTransformer : NSValueTransformer
+
+@property (assign) MXAppDelegate *delegate;
 
 @end

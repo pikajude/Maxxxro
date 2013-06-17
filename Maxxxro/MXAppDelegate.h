@@ -8,13 +8,15 @@
 
 #import <Cocoa/Cocoa.h>
 #import <ApplicationServices/ApplicationServices.h>
+#import <ServiceManagement/ServiceManagement.h>
+#import <Security/Security.h>
 #import "MXIntervalTransformer.h"
 #import "MXDurationTransformer.h"
+#import "MXIPCHelper.h"
 
 @interface MXAppDelegate : NSObject <NSApplicationDelegate> {
-    CGEventRef _start;
-    CGEventRef _stop;
     NSTimer *timer;
+    MXIPCHelper *helper;
 }
 
 @property (assign) IBOutlet NSWindow *window;
@@ -30,11 +32,13 @@
 
 - (IBAction)pickKey:(id)sender;
 
+- (void)updateInterval:(NSInteger)i;
+- (void)updateDuration:(NSInteger)d;
+
 - (void)updateKeyButtons:(NSInteger)keyCode;
+- (void)freakOut;
 
 - (void)startMacro;
 - (void)stopMacro;
-
-- (void)press;
 
 @end

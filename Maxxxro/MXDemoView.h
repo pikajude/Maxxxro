@@ -8,8 +8,10 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface MXDemoView : NSView
+@interface MXDemoView : NSView {
+    BOOL hasDrawn;
+}
 
-@property (assign) BOOL isKicking;
+@property (nonatomic, assign) BOOL isKicking;
 
 @end

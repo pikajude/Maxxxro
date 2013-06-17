@@ -78,14 +78,14 @@
 
 - (void)startKick
 {
-    [[self demoView] setIsKicking:YES];
-    [[self demoView] setNeedsDisplay:YES];
+    self.demoView.isKicking = YES;
+    self.demoView.needsDisplay = YES;
 }
 
 - (void)stopKick
 {
-    [[self demoView] setIsKicking:NO];
-    [[self demoView] setNeedsDisplay:YES];
+    self.demoView.isKicking = NO;
+    self.demoView.needsDisplay = YES;
 }
 
 @end

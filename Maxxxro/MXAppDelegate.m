@@ -8,31 +8,23 @@
 
 #import "MXAppDelegate.h"
 
-static CGEventRef keyDownCallback(CGEventTapProxy prox, CGEventType type, CGEventRef event, void *refcon) {
-    if([(MXAppDelegate *)refcon keyCode] == CGEventGetIntegerValueField(event, kCGKeyboardEventKeycode)) {
-        if(0 == CGEventGetIntegerValueField(event, kCGKeyboardEventAutorepeat))
-            [(MXAppDelegate *)refcon startMacro];
-        return NULL;
-    } else
-        return event;
+void exceptionHandler(int a) {
+    for(id app in [[NSWorkspace sharedWorkspace] runningApplications]) {
+        if ([[[app executableURL] lastPathComponent] isEqualToString:@"MaxxxroHelper"]) {
+            [app forceTerminate];
+        }
+    }
 }
 
-static CGEventRef keyUpCallback(CGEventTapProxy proxy, CGEventType type, CGEventRef event, void *refcon) {
-    if([(MXAppDelegate *)refcon keyCode] == CGEventGetIntegerValueField(event, kCGKeyboardEventKeycode)) {
-        if(0 == CGEventGetIntegerValueField(event, kCGKeyboardEventAutorepeat))
-            [(MXAppDelegate *)refcon stopMacro];
-        return NULL;
-    } else
-        return event;
+void exceptionHandler2(NSException *e) {
+    exceptionHandler(0);
 }
 
 @implementation MXAppDelegate
 
-- (void)dealloc
+- (void)applicationWillTerminate:(NSNotification *)notification
 {
-    CFRelease(_start);
-    CFRelease(_stop);
-    [super dealloc];
+    [helper killHelper];
 }
 
 - (IBAction)pickKey:(id)sender
@@ -48,41 +40,80 @@ static CGEventRef keyUpCallback(CGEventTapProxy proxy, CGEventType type, CGEvent
     
     [[NSUserDefaults standardUserDefaults] setInteger:keyCode forKey:@"macroKey"];
     self.keyCode = keyCode;
+    
+    helper.macroKey = keyCode;
+}
+
+- (void)launchHelper
+{
+    helper = [[MXIPCHelper alloc] initWithPath:[[NSBundle mainBundle] pathForResource:@"MaxxxroHelper" ofType:@""]];
+    [helper launchHelper:NO];
+    if(![helper checkAuth]) {
+        [helper killHelper];
+        if(![helper launchHelper:YES]) {
+            NSLog(@"Not given permission");
+            [self freakOut];
+            return;
+        } else {
+            [helper authorize];
+            [helper killHelper];
+            [helper launchHelper:NO];
+            if(![helper checkAuth]) {
+                NSLog(@"MakeProcessTrusted failed");
+                [self freakOut];
+                return;
+            }
+        }
+    }
+    
+    [helper initialize];
 }
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
+    signal(SIGABRT, &exceptionHandler);
+    signal(SIGILL, &exceptionHandler);
+    signal(SIGPIPE, &exceptionHandler);
+    signal(SIGSEGV, &exceptionHandler);
+    signal(SIGFPE, &exceptionHandler);
+    signal(SIGBUS, &exceptionHandler);
+    NSSetUncaughtExceptionHandler(&exceptionHandler2);
+    
     [[NSUserDefaults standardUserDefaults] registerDefaults:@{@"interval": @150, @"duration": @100, @"macroKey": @8}];
     
-    _start = CGEventCreateKeyboardEvent(NULL, 7, YES);
-    _stop = CGEventCreateKeyboardEvent(NULL, 7, NO);
+    [self launchHelper];
     
-    CFMachPortRef keyDownEventTap = CGEventTapCreate(kCGHIDEventTap, kCGHeadInsertEventTap,  kCGEventTapOptionDefault, CGEventMaskBit(kCGEventKeyDown), &keyDownCallback, self);
-    CFRunLoopSourceRef keyDownRunLoopSourceRef = CFMachPortCreateRunLoopSource(NULL, keyDownEventTap, 0);
-    CFRelease(keyDownEventTap);
-    CFRunLoopAddSource(CFRunLoopGetCurrent(), keyDownRunLoopSourceRef, kCFRunLoopDefaultMode);
-    CFRelease(keyDownRunLoopSourceRef);
+    [self updateKeyButtons:[[[NSUserDefaults standardUserDefaults] objectForKey:@"macroKey"] integerValue]];
     
-    CFMachPortRef keyUpEventTap = CGEventTapCreate(kCGHIDEventTap, kCGHeadInsertEventTap,  kCGEventTapOptionDefault, CGEventMaskBit(kCGEventKeyUp), &keyUpCallback, self);
-    CFRunLoopSourceRef keyUpRunLoopSourceRef = CFMachPortCreateRunLoopSource(NULL, keyUpEventTap, 0);
-    CFRelease(keyUpEventTap);
-    CFRunLoopAddSource(CFRunLoopGetCurrent(), keyUpRunLoopSourceRef, kCFRunLoopDefaultMode);
-    CFRelease(keyUpRunLoopSourceRef);
+    MXIntervalTransformer *intTrans = [[[MXIntervalTransformer alloc] init] autorelease];
+    MXDurationTransformer *durTrans = [[[MXDurationTransformer alloc] init] autorelease];
+    intTrans.delegate = self;
+    durTrans.delegate = self;
     
     [_interval bind:@"value"
            toObject:[NSUserDefaultsController sharedUserDefaultsController]
         withKeyPath:@"values.interval"
-            options:@{NSValueTransformerBindingOption: [[[MXIntervalTransformer alloc] init] autorelease], NSContinuouslyUpdatesValueBindingOption: @YES}];
+            options:@{NSValueTransformerBindingOption: intTrans, NSContinuouslyUpdatesValueBindingOption: @NO}];
     
     [_duration bind:@"value"
            toObject:[NSUserDefaultsController sharedUserDefaultsController]
         withKeyPath:@"values.duration"
-            options:@{NSValueTransformerBindingOption: [[[MXDurationTransformer alloc] init] autorelease], NSContinuouslyUpdatesValueBindingOption: @YES}];
+            options:@{NSValueTransformerBindingOption: durTrans, NSContinuouslyUpdatesValueBindingOption: @NO}];
 }
 
-- (void)awakeFromNib
+- (void)updateInterval:(NSInteger)i
 {
-    [self updateKeyButtons:[[[NSUserDefaults standardUserDefaults] objectForKey:@"macroKey"] integerValue]];
+    helper.interval = i;
+}
+
+- (void)updateDuration:(NSInteger)d
+{
+    helper.duration = d;
+}
+
+- (void)freakOut
+{
+    [NSApp terminate:nil];
 }
 
 - (void)startMacro
@@ -97,14 +128,6 @@ static CGEventRef keyUpCallback(CGEventTapProxy proxy, CGEventType type, CGEvent
     [self retain];
     [timer invalidate];
     timer = nil;
-}
-
-- (void)press
-{
-    CGEventPost(kCGHIDEventTap, _start);
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, [[[NSUserDefaults standardUserDefaults] objectForKey:@"duration"] floatValue] * 1000000), dispatch_get_main_queue(), ^{
-        CGEventPost(kCGHIDEventTap, _stop);
-    });
 }
 
 @end

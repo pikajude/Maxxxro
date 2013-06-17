@@ -17,10 +17,50 @@
 		17D611641613690B00CE9262 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17D611621613690B00CE9262 /* MainMenu.xib */; };
 		8F276B70176A234900D0799D /* MXKeyButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F276B6F176A234900D0799D /* MXKeyButtonCell.m */; };
 		8F276B79176A64D400D0799D /* MXKeyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F276B78176A64D400D0799D /* MXKeyButton.m */; };
+		8F42C50E176B952600349AFA /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F42C50D176B952600349AFA /* Security.framework */; };
+		8F42C515176B98F200349AFA /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F42C514176B98F200349AFA /* CoreServices.framework */; };
+		8F42C529176B9BEE00349AFA /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 8F42C527176B9BEE00349AFA /* main.c */; };
+		8F42C52A176B9C0A00349AFA /* MaxxxroHelper in Resources */ = {isa = PBXBuildFile; fileRef = 8F42C513176B98F200349AFA /* MaxxxroHelper */; };
 		8F5D6D1C17699EF1009B5F70 /* MXDemoCatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5D6D1B17699EF1009B5F70 /* MXDemoCatcher.m */; };
 		8F7B609F17699130003247F2 /* MXDemoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7B609E17699130003247F2 /* MXDemoView.m */; };
+		8F93EF1A176BABEE00C44180 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F42C50D176B952600349AFA /* Security.framework */; };
+		8F93EF1B176BAC5400C44180 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17D6114D1613690B00CE9262 /* Cocoa.framework */; };
 		8FC50408176AC51B00B2C22C /* Maxxxro.icns in Resources */ = {isa = PBXBuildFile; fileRef = 8FC50407176AC51B00B2C22C /* Maxxxro.icns */; };
+		8FD2AE8D176BF99C00290498 /* MXIPCHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD2AE8C176BF99C00290498 /* MXIPCHelper.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		8F42C51E176B992E00349AFA /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = pattern.proxy;
+			isEditable = 1;
+			outputFiles = (
+			);
+		};
+/* End PBXBuildRule section */
+
+/* Begin PBXContainerItemProxy section */
+		8F42C51F176B995500349AFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17D611401613690B00CE9262 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8F42C512176B98F200349AFA;
+			remoteInfo = MaxxxroHelper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8F42C511176B98F200349AFA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1714AAA21613E39A0044D14B /* MXDurationTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXDurationTransformer.h; sourceTree = "<group>"; };
@@ -44,11 +84,18 @@
 		8F276B6F176A234900D0799D /* MXKeyButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXKeyButtonCell.m; sourceTree = "<group>"; };
 		8F276B77176A64D400D0799D /* MXKeyButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXKeyButton.h; sourceTree = "<group>"; };
 		8F276B78176A64D400D0799D /* MXKeyButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXKeyButton.m; sourceTree = "<group>"; };
+		8F42C50D176B952600349AFA /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		8F42C513176B98F200349AFA /* MaxxxroHelper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MaxxxroHelper; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F42C514176B98F200349AFA /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		8F42C527176B9BEE00349AFA /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		8F42C528176B9BEE00349AFA /* MaxxxroHelper.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = MaxxxroHelper.1; sourceTree = "<group>"; };
 		8F5D6D1A17699EF1009B5F70 /* MXDemoCatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXDemoCatcher.h; sourceTree = "<group>"; };
 		8F5D6D1B17699EF1009B5F70 /* MXDemoCatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXDemoCatcher.m; sourceTree = "<group>"; };
 		8F7B609D17699130003247F2 /* MXDemoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXDemoView.h; sourceTree = "<group>"; };
 		8F7B609E17699130003247F2 /* MXDemoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXDemoView.m; sourceTree = "<group>"; };
 		8FC50407176AC51B00B2C22C /* Maxxxro.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Maxxxro.icns; sourceTree = "<group>"; };
+		8FD2AE8B176BF99C00290498 /* MXIPCHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXIPCHelper.h; sourceTree = "<group>"; };
+		8FD2AE8C176BF99C00290498 /* MXIPCHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXIPCHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +103,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F42C50E176B952600349AFA /* Security.framework in Frameworks */,
 				17D6114E1613690B00CE9262 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F42C510176B98F200349AFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F93EF1B176BAC5400C44180 /* Cocoa.framework in Frameworks */,
+				8F93EF1A176BABEE00C44180 /* Security.framework in Frameworks */,
+				8F42C515176B98F200349AFA /* CoreServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +124,7 @@
 		17D6113E1613690B00CE9262 = {
 			isa = PBXGroup;
 			children = (
+				8F42C50D176B952600349AFA /* Security.framework */,
 				8FC50407176AC51B00B2C22C /* Maxxxro.icns */,
 				17D611531613690B00CE9262 /* Maxxxro */,
 				17D6114C1613690B00CE9262 /* Frameworks */,
@@ -77,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				17D611491613690B00CE9262 /* Maxxxro.app */,
+				8F42C513176B98F200349AFA /* MaxxxroHelper */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -85,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				17D6114D1613690B00CE9262 /* Cocoa.framework */,
+				8F42C514176B98F200349AFA /* CoreServices.framework */,
 				17D6114F1613690B00CE9262 /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -103,22 +164,25 @@
 		17D611531613690B00CE9262 /* Maxxxro */ = {
 			isa = PBXGroup;
 			children = (
-				1714AAA61613E3AC0044D14B /* MXIntervalTransformer.h */,
-				1714AAA71613E3AC0044D14B /* MXIntervalTransformer.m */,
-				1714AAA21613E39A0044D14B /* MXDurationTransformer.h */,
-				1714AAA31613E39A0044D14B /* MXDurationTransformer.m */,
+				17D611621613690B00CE9262 /* MainMenu.xib */,
+				8F42C526176B9BEE00349AFA /* MaxxxroHelper */,
 				17D6115F1613690B00CE9262 /* MXAppDelegate.h */,
 				17D611601613690B00CE9262 /* MXAppDelegate.m */,
-				17D611621613690B00CE9262 /* MainMenu.xib */,
-				8F276B77176A64D400D0799D /* MXKeyButton.h */,
-				8F276B78176A64D400D0799D /* MXKeyButton.m */,
-				8F276B6E176A234900D0799D /* MXKeyButtonCell.h */,
-				8F276B6F176A234900D0799D /* MXKeyButtonCell.m */,
 				8F5D6D1A17699EF1009B5F70 /* MXDemoCatcher.h */,
 				8F5D6D1B17699EF1009B5F70 /* MXDemoCatcher.m */,
 				8F7B609D17699130003247F2 /* MXDemoView.h */,
 				8F7B609E17699130003247F2 /* MXDemoView.m */,
+				1714AAA21613E39A0044D14B /* MXDurationTransformer.h */,
+				1714AAA31613E39A0044D14B /* MXDurationTransformer.m */,
+				1714AAA61613E3AC0044D14B /* MXIntervalTransformer.h */,
+				1714AAA71613E3AC0044D14B /* MXIntervalTransformer.m */,
+				8F276B77176A64D400D0799D /* MXKeyButton.h */,
+				8F276B78176A64D400D0799D /* MXKeyButton.m */,
+				8F276B6E176A234900D0799D /* MXKeyButtonCell.h */,
+				8F276B6F176A234900D0799D /* MXKeyButtonCell.m */,
 				17D611541613690B00CE9262 /* Supporting Files */,
+				8FD2AE8B176BF99C00290498 /* MXIPCHelper.h */,
+				8FD2AE8C176BF99C00290498 /* MXIPCHelper.m */,
 			);
 			path = Maxxxro;
 			sourceTree = "<group>";
@@ -135,6 +199,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		8F42C526176B9BEE00349AFA /* MaxxxroHelper */ = {
+			isa = PBXGroup;
+			children = (
+				8F42C527176B9BEE00349AFA /* main.c */,
+				8F42C528176B9BEE00349AFA /* MaxxxroHelper.1 */,
+			);
+			path = MaxxxroHelper;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -149,11 +222,30 @@
 			buildRules = (
 			);
 			dependencies = (
+				8F42C520176B995500349AFA /* PBXTargetDependency */,
 			);
 			name = Maxxxro;
 			productName = Maxxxro;
 			productReference = 17D611491613690B00CE9262 /* Maxxxro.app */;
 			productType = "com.apple.product-type.application";
+		};
+		8F42C512176B98F200349AFA /* MaxxxroHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F42C51B176B98F200349AFA /* Build configuration list for PBXNativeTarget "MaxxxroHelper" */;
+			buildPhases = (
+				8F42C50F176B98F200349AFA /* Sources */,
+				8F42C510176B98F200349AFA /* Frameworks */,
+				8F42C511176B98F200349AFA /* CopyFiles */,
+			);
+			buildRules = (
+				8F42C51E176B992E00349AFA /* PBXBuildRule */,
+			);
+			dependencies = (
+			);
+			name = MaxxxroHelper;
+			productName = MaxxxroHelper;
+			productReference = 8F42C513176B98F200349AFA /* MaxxxroHelper */;
+			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
@@ -178,6 +270,7 @@
 			projectRoot = "";
 			targets = (
 				17D611481613690B00CE9262 /* Maxxxro */,
+				8F42C512176B98F200349AFA /* MaxxxroHelper */,
 			);
 		};
 /* End PBXProject section */
@@ -187,6 +280,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F42C52A176B9C0A00349AFA /* MaxxxroHelper in Resources */,
 				17D611581613690B00CE9262 /* InfoPlist.strings in Resources */,
 				17D6115E1613690B00CE9262 /* Credits.rtf in Resources */,
 				17D611641613690B00CE9262 /* MainMenu.xib in Resources */,
@@ -209,10 +303,27 @@
 				8F5D6D1C17699EF1009B5F70 /* MXDemoCatcher.m in Sources */,
 				8F276B70176A234900D0799D /* MXKeyButtonCell.m in Sources */,
 				8F276B79176A64D400D0799D /* MXKeyButton.m in Sources */,
+				8FD2AE8D176BF99C00290498 /* MXIPCHelper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F42C50F176B98F200349AFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F42C529176B9BEE00349AFA /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8F42C520176B995500349AFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8F42C512176B98F200349AFA /* MaxxxroHelper */;
+			targetProxy = 8F42C51F176B995500349AFA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		17D611561613690B00CE9262 /* InfoPlist.strings */ = {
@@ -319,6 +430,28 @@
 			};
 			name = Release;
 		};
+		8F42C51C176B98F200349AFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8F42C51D176B98F200349AFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -336,6 +469,15 @@
 			buildConfigurations = (
 				17D611681613690B00CE9262 /* Debug */,
 				17D611691613690B00CE9262 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F42C51B176B98F200349AFA /* Build configuration list for PBXNativeTarget "MaxxxroHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F42C51C176B98F200349AFA /* Debug */,
+				8F42C51D176B98F200349AFA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
