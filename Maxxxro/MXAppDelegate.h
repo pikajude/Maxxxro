@@ -12,11 +12,12 @@
 #import <Security/Security.h>
 #import "MXIntervalTransformer.h"
 #import "MXDurationTransformer.h"
-#import "MXIPCHelper.h"
 
 @interface MXAppDelegate : NSObject <NSApplicationDelegate> {
+    CGEventRef _start;
+    CGEventRef _stop;
     NSTimer *timer;
-    MXIPCHelper *helper;
+    NSInteger _macroButton;
 }
 
 @property (assign) IBOutlet NSWindow *window;
@@ -40,5 +41,9 @@
 
 - (void)startMacro;
 - (void)stopMacro;
+- (void)press;
+
+- (void)acquirePrivileges;
+- (void)registerEvents;
 
 @end

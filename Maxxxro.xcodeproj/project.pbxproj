@@ -19,14 +19,12 @@
 		8F276B79176A64D400D0799D /* MXKeyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F276B78176A64D400D0799D /* MXKeyButton.m */; };
 		8F42C50E176B952600349AFA /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F42C50D176B952600349AFA /* Security.framework */; };
 		8F42C515176B98F200349AFA /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F42C514176B98F200349AFA /* CoreServices.framework */; };
-		8F42C529176B9BEE00349AFA /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 8F42C527176B9BEE00349AFA /* main.c */; };
 		8F42C52A176B9C0A00349AFA /* MaxxxroHelper in Resources */ = {isa = PBXBuildFile; fileRef = 8F42C513176B98F200349AFA /* MaxxxroHelper */; };
 		8F5D6D1C17699EF1009B5F70 /* MXDemoCatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5D6D1B17699EF1009B5F70 /* MXDemoCatcher.m */; };
-		8F7B609F17699130003247F2 /* MXDemoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7B609E17699130003247F2 /* MXDemoView.m */; };
 		8F93EF1A176BABEE00C44180 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F42C50D176B952600349AFA /* Security.framework */; };
 		8F93EF1B176BAC5400C44180 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17D6114D1613690B00CE9262 /* Cocoa.framework */; };
 		8FC50408176AC51B00B2C22C /* Maxxxro.icns in Resources */ = {isa = PBXBuildFile; fileRef = 8FC50407176AC51B00B2C22C /* Maxxxro.icns */; };
-		8FD2AE8D176BF99C00290498 /* MXIPCHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD2AE8C176BF99C00290498 /* MXIPCHelper.m */; };
+		FAA5BC7C18FF1AEB0082B1C3 /* MXDemoView.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA5BC7B18FF1AEB0082B1C3 /* MXDemoView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -87,15 +85,11 @@
 		8F42C50D176B952600349AFA /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		8F42C513176B98F200349AFA /* MaxxxroHelper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MaxxxroHelper; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F42C514176B98F200349AFA /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
-		8F42C527176B9BEE00349AFA /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		8F42C528176B9BEE00349AFA /* MaxxxroHelper.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = MaxxxroHelper.1; sourceTree = "<group>"; };
 		8F5D6D1A17699EF1009B5F70 /* MXDemoCatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXDemoCatcher.h; sourceTree = "<group>"; };
 		8F5D6D1B17699EF1009B5F70 /* MXDemoCatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXDemoCatcher.m; sourceTree = "<group>"; };
-		8F7B609D17699130003247F2 /* MXDemoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXDemoView.h; sourceTree = "<group>"; };
-		8F7B609E17699130003247F2 /* MXDemoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXDemoView.m; sourceTree = "<group>"; };
 		8FC50407176AC51B00B2C22C /* Maxxxro.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Maxxxro.icns; sourceTree = "<group>"; };
-		8FD2AE8B176BF99C00290498 /* MXIPCHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXIPCHelper.h; sourceTree = "<group>"; };
-		8FD2AE8C176BF99C00290498 /* MXIPCHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXIPCHelper.m; sourceTree = "<group>"; };
+		FAA5BC7A18FF1AEB0082B1C3 /* MXDemoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXDemoView.h; sourceTree = "<group>"; };
+		FAA5BC7B18FF1AEB0082B1C3 /* MXDemoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXDemoView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,13 +159,12 @@
 			isa = PBXGroup;
 			children = (
 				17D611621613690B00CE9262 /* MainMenu.xib */,
-				8F42C526176B9BEE00349AFA /* MaxxxroHelper */,
 				17D6115F1613690B00CE9262 /* MXAppDelegate.h */,
 				17D611601613690B00CE9262 /* MXAppDelegate.m */,
+				FAA5BC7A18FF1AEB0082B1C3 /* MXDemoView.h */,
+				FAA5BC7B18FF1AEB0082B1C3 /* MXDemoView.m */,
 				8F5D6D1A17699EF1009B5F70 /* MXDemoCatcher.h */,
 				8F5D6D1B17699EF1009B5F70 /* MXDemoCatcher.m */,
-				8F7B609D17699130003247F2 /* MXDemoView.h */,
-				8F7B609E17699130003247F2 /* MXDemoView.m */,
 				1714AAA21613E39A0044D14B /* MXDurationTransformer.h */,
 				1714AAA31613E39A0044D14B /* MXDurationTransformer.m */,
 				1714AAA61613E3AC0044D14B /* MXIntervalTransformer.h */,
@@ -181,8 +174,6 @@
 				8F276B6E176A234900D0799D /* MXKeyButtonCell.h */,
 				8F276B6F176A234900D0799D /* MXKeyButtonCell.m */,
 				17D611541613690B00CE9262 /* Supporting Files */,
-				8FD2AE8B176BF99C00290498 /* MXIPCHelper.h */,
-				8FD2AE8C176BF99C00290498 /* MXIPCHelper.m */,
 			);
 			path = Maxxxro;
 			sourceTree = "<group>";
@@ -197,15 +188,6 @@
 				17D6115C1613690B00CE9262 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		8F42C526176B9BEE00349AFA /* MaxxxroHelper */ = {
-			isa = PBXGroup;
-			children = (
-				8F42C527176B9BEE00349AFA /* main.c */,
-				8F42C528176B9BEE00349AFA /* MaxxxroHelper.1 */,
-			);
-			path = MaxxxroHelper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,7 +236,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = MX;
-				LastUpgradeCheck = 0450;
+				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = Joel;
 			};
 			buildConfigurationList = 17D611431613690B00CE9262 /* Build configuration list for PBXProject "Maxxxro" */;
@@ -299,11 +281,10 @@
 				17D611611613690B00CE9262 /* MXAppDelegate.m in Sources */,
 				1714AAA41613E39A0044D14B /* MXDurationTransformer.m in Sources */,
 				1714AAA81613E3AC0044D14B /* MXIntervalTransformer.m in Sources */,
-				8F7B609F17699130003247F2 /* MXDemoView.m in Sources */,
+				FAA5BC7C18FF1AEB0082B1C3 /* MXDemoView.m in Sources */,
 				8F5D6D1C17699EF1009B5F70 /* MXDemoCatcher.m in Sources */,
 				8F276B70176A234900D0799D /* MXKeyButtonCell.m in Sources */,
 				8F276B79176A64D400D0799D /* MXKeyButton.m in Sources */,
-				8FD2AE8D176BF99C00290498 /* MXIPCHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,7 +292,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F42C529176B9BEE00349AFA /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,7 +337,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -386,7 +365,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN_EMPTY_BODY = YES;

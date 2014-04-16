@@ -14,10 +14,15 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        // Initialization code here.
+        NSLog(@"being initialized");
     }
     
     return self;
+}
+
+- (BOOL)acceptsFirstResponder
+{
+    return YES;
 }
 
 - (void)drawRect:(NSRect)dirtyRect
