@@ -147,7 +147,7 @@ void exceptionHandler2(NSException *e) {
 - (void)press
 {
     CGEventPost(kCGHIDEventTap, _start);
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, [[[NSUserDefaults standardUserDefaults] objectForKey:@"interval"] floatValue] * 1000000), dispatch_get_main_queue(), ^{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, [[[NSUserDefaults standardUserDefaults] objectForKey:@"duration"] floatValue] * 1000000), dispatch_get_main_queue(), ^{
         CGEventPost(kCGHIDEventTap, _stop);
     });
 }
