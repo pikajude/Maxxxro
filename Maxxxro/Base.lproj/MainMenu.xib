@@ -11,7 +11,7 @@
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application"/>
-        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Maxxxro_S" customModuleProvider="target">
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Maxxxro" customModuleProvider="target">
             <connections>
                 <outlet property="cButton" destination="57s-Se-8g8" id="c2K-ED-AiH"/>
                 <outlet property="catcher" destination="1Ey-1F-HRj" id="Iz7-uk-ps4"/>
@@ -676,15 +676,15 @@
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" utility="YES" HUD="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="196" y="240" width="205" height="267"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1418"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="878"/>
             <value key="minSize" type="size" width="205" height="267"/>
             <value key="maxSize" type="size" width="205" height="267"/>
-            <view key="contentView" id="1Ey-1F-HRj" customClass="DemoCatcher" customModule="Maxxxro_S" customModuleProvider="target">
+            <view key="contentView" id="1Ey-1F-HRj" customClass="DemoCatcher" customModule="Maxxxro" customModuleProvider="target">
                 <rect key="frame" x="0.0" y="0.0" width="205" height="267"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <slider focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MHf-mJ-c9b">
-                        <rect key="frame" x="18" y="228" width="169" height="21"/>
+                        <rect key="frame" x="18" y="228" width="169" height="20"/>
                         <sliderCell key="cell" continuous="YES" state="on" focusRingType="none" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="dfm-C9-GZF"/>
                         <connections>
                             <binding destination="Lxr-G8-j3H" name="value" keyPath="values.interval" id="gmx-eH-gVF"/>
@@ -699,7 +699,7 @@
                         </textFieldCell>
                     </textField>
                     <slider focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ib2-QM-82k">
-                        <rect key="frame" x="18" y="178" width="169" height="21"/>
+                        <rect key="frame" x="18" y="178" width="169" height="20"/>
                         <sliderCell key="cell" continuous="YES" state="on" focusRingType="none" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="QHm-11-eMG"/>
                         <connections>
                             <binding destination="Lxr-G8-j3H" name="value" keyPath="values.duration" id="iPi-Xu-nqA"/>
@@ -713,9 +713,9 @@
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <button verticalHuggingPriority="750" fixedFrame="YES" tag="8" translatesAutoresizingMaskIntoConstraints="NO" id="57s-Se-8g8" customClass="KeyButton" customModule="Maxxxro_S" customModuleProvider="target">
+                    <button verticalHuggingPriority="750" fixedFrame="YES" tag="8" translatesAutoresizingMaskIntoConstraints="NO" id="57s-Se-8g8" customClass="KeyButton" customModule="Maxxxro" customModuleProvider="target">
                         <rect key="frame" x="13" y="120" width="53" height="32"/>
-                        <buttonCell key="cell" type="push" title="C" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="rZN-1D-PuM" customClass="KeyButtonCell" customModule="Maxxxro_S" customModuleProvider="target">
+                        <buttonCell key="cell" type="push" title="C" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="rZN-1D-PuM" customClass="KeyButtonCell" customModule="Maxxxro" customModuleProvider="target">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -723,9 +723,9 @@
                             <action selector="pickKey:" target="Voe-Tx-rLC" id="Pux-Y6-SkW"/>
                         </connections>
                     </button>
-                    <button verticalHuggingPriority="750" fixedFrame="YES" tag="6" translatesAutoresizingMaskIntoConstraints="NO" id="Mad-sh-R1a" customClass="KeyButton" customModule="Maxxxro_S" customModuleProvider="target">
+                    <button verticalHuggingPriority="750" fixedFrame="YES" tag="6" translatesAutoresizingMaskIntoConstraints="NO" id="Mad-sh-R1a" customClass="KeyButton" customModule="Maxxxro" customModuleProvider="target">
                         <rect key="frame" x="64" y="120" width="53" height="32"/>
-                        <buttonCell key="cell" type="push" title="Z" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="X0h-TT-alR" customClass="KeyButtonCell" customModule="Maxxxro_S" customModuleProvider="target">
+                        <buttonCell key="cell" type="push" title="Z" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="X0h-TT-alR" customClass="KeyButtonCell" customModule="Maxxxro" customModuleProvider="target">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -733,9 +733,9 @@
                             <action selector="pickKey:" target="Voe-Tx-rLC" id="kXz-0n-ULv"/>
                         </connections>
                     </button>
-                    <button verticalHuggingPriority="750" fixedFrame="YES" tag="49" translatesAutoresizingMaskIntoConstraints="NO" id="wlU-5i-fVN" customClass="KeyButton" customModule="Maxxxro_S" customModuleProvider="target">
+                    <button verticalHuggingPriority="750" fixedFrame="YES" tag="49" translatesAutoresizingMaskIntoConstraints="NO" id="wlU-5i-fVN" customClass="KeyButton" customModule="Maxxxro" customModuleProvider="target">
                         <rect key="frame" x="115" y="120" width="77" height="32"/>
-                        <buttonCell key="cell" type="push" title="Space" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="QHY-0e-sPh" customClass="KeyButtonCell" customModule="Maxxxro_S" customModuleProvider="target">
+                        <buttonCell key="cell" type="push" title="Space" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="QHY-0e-sPh" customClass="KeyButtonCell" customModule="Maxxxro" customModuleProvider="target">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -743,7 +743,7 @@
                             <action selector="pickKey:" target="Voe-Tx-rLC" id="u3d-Vo-8fD"/>
                         </connections>
                     </button>
-                    <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SoI-CS-8Ig" customClass="DemoView" customModule="Maxxxro_S" customModuleProvider="target">
+                    <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SoI-CS-8Ig" customClass="DemoView" customModule="Maxxxro" customModuleProvider="target">
                         <rect key="frame" x="14" y="16" width="177" height="101"/>
                     </customView>
                 </subviews>
