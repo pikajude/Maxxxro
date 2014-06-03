@@ -7,288 +7,216 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1714AAA41613E39A0044D14B /* MXDurationTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1714AAA31613E39A0044D14B /* MXDurationTransformer.m */; };
-		1714AAA81613E3AC0044D14B /* MXIntervalTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1714AAA71613E3AC0044D14B /* MXIntervalTransformer.m */; };
-		17D6114E1613690B00CE9262 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17D6114D1613690B00CE9262 /* Cocoa.framework */; };
-		17D611581613690B00CE9262 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 17D611561613690B00CE9262 /* InfoPlist.strings */; };
-		17D6115A1613690B00CE9262 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D611591613690B00CE9262 /* main.m */; };
-		17D6115E1613690B00CE9262 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 17D6115C1613690B00CE9262 /* Credits.rtf */; };
-		17D611611613690B00CE9262 /* MXAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D611601613690B00CE9262 /* MXAppDelegate.m */; };
-		17D611641613690B00CE9262 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17D611621613690B00CE9262 /* MainMenu.xib */; };
-		8F276B70176A234900D0799D /* MXKeyButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F276B6F176A234900D0799D /* MXKeyButtonCell.m */; };
-		8F276B79176A64D400D0799D /* MXKeyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F276B78176A64D400D0799D /* MXKeyButton.m */; };
-		8F42C50E176B952600349AFA /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F42C50D176B952600349AFA /* Security.framework */; };
-		8F42C515176B98F200349AFA /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F42C514176B98F200349AFA /* CoreServices.framework */; };
-		8F42C52A176B9C0A00349AFA /* MaxxxroHelper in Resources */ = {isa = PBXBuildFile; fileRef = 8F42C513176B98F200349AFA /* MaxxxroHelper */; };
-		8F5D6D1C17699EF1009B5F70 /* MXDemoCatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5D6D1B17699EF1009B5F70 /* MXDemoCatcher.m */; };
-		8F93EF1A176BABEE00C44180 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F42C50D176B952600349AFA /* Security.framework */; };
-		8F93EF1B176BAC5400C44180 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17D6114D1613690B00CE9262 /* Cocoa.framework */; };
-		8FC50408176AC51B00B2C22C /* Maxxxro.icns in Resources */ = {isa = PBXBuildFile; fileRef = 8FC50407176AC51B00B2C22C /* Maxxxro.icns */; };
-		FAA5BC7C18FF1AEB0082B1C3 /* MXDemoView.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA5BC7B18FF1AEB0082B1C3 /* MXDemoView.m */; };
+		8F0B55BF193D74A0007C0C77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0B55AF193D74A0007C0C77 /* AppDelegate.swift */; };
+		8F0B55C1193D74A0007C0C77 /* ButtonPusher.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F0B55B3193D74A0007C0C77 /* ButtonPusher.m */; };
+		8F0B55C2193D74A0007C0C77 /* DemoCatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0B55B4193D74A0007C0C77 /* DemoCatcher.swift */; };
+		8F0B55C3193D74A0007C0C77 /* DemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0B55B5193D74A0007C0C77 /* DemoView.swift */; };
+		8F0B55C4193D74A0007C0C77 /* DurationTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0B55B6193D74A0007C0C77 /* DurationTransformer.swift */; };
+		8F0B55C5193D74A0007C0C77 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F0B55B7193D74A0007C0C77 /* Images.xcassets */; };
+		8F0B55C7193D74A0007C0C77 /* IntervalTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0B55B9193D74A0007C0C77 /* IntervalTransformer.swift */; };
+		8F0B55C8193D74A0007C0C77 /* KeyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0B55BA193D74A0007C0C77 /* KeyButton.swift */; };
+		8F0B55C9193D74A0007C0C77 /* KeyButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0B55BB193D74A0007C0C77 /* KeyButtonCell.swift */; };
+		8F0B55CA193D74A0007C0C77 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0B55BC193D74A0007C0C77 /* main.swift */; };
+		8F0B55CC193D7524007C0C77 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F0B55B0193D74A0007C0C77 /* MainMenu.xib */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXBuildRule section */
-		8F42C51E176B992E00349AFA /* PBXBuildRule */ = {
-			isa = PBXBuildRule;
-			compilerSpec = com.apple.compilers.proxy.script;
-			fileType = pattern.proxy;
-			isEditable = 1;
-			outputFiles = (
-			);
-		};
-/* End PBXBuildRule section */
-
 /* Begin PBXContainerItemProxy section */
-		8F42C51F176B995500349AFA /* PBXContainerItemProxy */ = {
+		8F0B558E193D379C007C0C77 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 17D611401613690B00CE9262 /* Project object */;
+			containerPortal = 8F0B5573193D379B007C0C77 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8F42C512176B98F200349AFA;
-			remoteInfo = MaxxxroHelper;
+			remoteGlobalIDString = 8F0B557A193D379B007C0C77;
+			remoteInfo = "Maxxxro-S";
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		8F42C511176B98F200349AFA /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		1714AAA21613E39A0044D14B /* MXDurationTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXDurationTransformer.h; sourceTree = "<group>"; };
-		1714AAA31613E39A0044D14B /* MXDurationTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXDurationTransformer.m; sourceTree = "<group>"; };
-		1714AAA61613E3AC0044D14B /* MXIntervalTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXIntervalTransformer.h; sourceTree = "<group>"; };
-		1714AAA71613E3AC0044D14B /* MXIntervalTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXIntervalTransformer.m; sourceTree = "<group>"; };
-		17D611491613690B00CE9262 /* Maxxxro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Maxxxro.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		17D6114D1613690B00CE9262 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		17D611501613690B00CE9262 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		17D611511613690B00CE9262 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		17D611521613690B00CE9262 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		17D611551613690B00CE9262 /* Maxxxro-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Maxxxro-Info.plist"; sourceTree = "<group>"; };
-		17D611571613690B00CE9262 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		17D611591613690B00CE9262 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		17D6115B1613690B00CE9262 /* Maxxxro-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Maxxxro-Prefix.pch"; sourceTree = "<group>"; };
-		17D6115D1613690B00CE9262 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		17D6115F1613690B00CE9262 /* MXAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MXAppDelegate.h; sourceTree = "<group>"; };
-		17D611601613690B00CE9262 /* MXAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MXAppDelegate.m; sourceTree = "<group>"; };
-		17D611631613690B00CE9262 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		8F276B6E176A234900D0799D /* MXKeyButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXKeyButtonCell.h; sourceTree = "<group>"; };
-		8F276B6F176A234900D0799D /* MXKeyButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXKeyButtonCell.m; sourceTree = "<group>"; };
-		8F276B77176A64D400D0799D /* MXKeyButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXKeyButton.h; sourceTree = "<group>"; };
-		8F276B78176A64D400D0799D /* MXKeyButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXKeyButton.m; sourceTree = "<group>"; };
-		8F42C50D176B952600349AFA /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		8F42C513176B98F200349AFA /* MaxxxroHelper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MaxxxroHelper; sourceTree = BUILT_PRODUCTS_DIR; };
-		8F42C514176B98F200349AFA /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
-		8F5D6D1A17699EF1009B5F70 /* MXDemoCatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXDemoCatcher.h; sourceTree = "<group>"; };
-		8F5D6D1B17699EF1009B5F70 /* MXDemoCatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXDemoCatcher.m; sourceTree = "<group>"; };
-		8FC50407176AC51B00B2C22C /* Maxxxro.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Maxxxro.icns; sourceTree = "<group>"; };
-		FAA5BC7A18FF1AEB0082B1C3 /* MXDemoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXDemoView.h; sourceTree = "<group>"; };
-		FAA5BC7B18FF1AEB0082B1C3 /* MXDemoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXDemoView.m; sourceTree = "<group>"; };
+		8F0B557B193D379B007C0C77 /* Maxxxro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Maxxxro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F0B558D193D379C007C0C77 /* MaxxxroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaxxxroTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F0B55AF193D74A0007C0C77 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8F0B55B1193D74A0007C0C77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		8F0B55B2193D74A0007C0C77 /* ButtonPusher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonPusher.h; sourceTree = "<group>"; };
+		8F0B55B3193D74A0007C0C77 /* ButtonPusher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonPusher.m; sourceTree = "<group>"; };
+		8F0B55B4193D74A0007C0C77 /* DemoCatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoCatcher.swift; sourceTree = "<group>"; };
+		8F0B55B5193D74A0007C0C77 /* DemoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoView.swift; sourceTree = "<group>"; };
+		8F0B55B6193D74A0007C0C77 /* DurationTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DurationTransformer.swift; sourceTree = "<group>"; };
+		8F0B55B7193D74A0007C0C77 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8F0B55B8193D74A0007C0C77 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F0B55B9193D74A0007C0C77 /* IntervalTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntervalTransformer.swift; sourceTree = "<group>"; };
+		8F0B55BA193D74A0007C0C77 /* KeyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyButton.swift; sourceTree = "<group>"; };
+		8F0B55BB193D74A0007C0C77 /* KeyButtonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyButtonCell.swift; sourceTree = "<group>"; };
+		8F0B55BC193D74A0007C0C77 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		8F0B55CB193D7505007C0C77 /* Maxxxro-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Maxxxro-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		17D611461613690B00CE9262 /* Frameworks */ = {
+		8F0B5578193D379B007C0C77 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F42C50E176B952600349AFA /* Security.framework in Frameworks */,
-				17D6114E1613690B00CE9262 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8F42C510176B98F200349AFA /* Frameworks */ = {
+		8F0B558A193D379C007C0C77 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F93EF1B176BAC5400C44180 /* Cocoa.framework in Frameworks */,
-				8F93EF1A176BABEE00C44180 /* Security.framework in Frameworks */,
-				8F42C515176B98F200349AFA /* CoreServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		17D6113E1613690B00CE9262 = {
+		8F0B5572193D379B007C0C77 = {
 			isa = PBXGroup;
 			children = (
-				8F42C50D176B952600349AFA /* Security.framework */,
-				8FC50407176AC51B00B2C22C /* Maxxxro.icns */,
-				17D611531613690B00CE9262 /* Maxxxro */,
-				17D6114C1613690B00CE9262 /* Frameworks */,
-				17D6114A1613690B00CE9262 /* Products */,
+				8F0B55AE193D74A0007C0C77 /* Maxxxro */,
+				8F0B557C193D379B007C0C77 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		17D6114A1613690B00CE9262 /* Products */ = {
+		8F0B557C193D379B007C0C77 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				17D611491613690B00CE9262 /* Maxxxro.app */,
-				8F42C513176B98F200349AFA /* MaxxxroHelper */,
+				8F0B557B193D379B007C0C77 /* Maxxxro.app */,
+				8F0B558D193D379C007C0C77 /* MaxxxroTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		17D6114C1613690B00CE9262 /* Frameworks */ = {
+		8F0B55AE193D74A0007C0C77 /* Maxxxro */ = {
 			isa = PBXGroup;
 			children = (
-				17D6114D1613690B00CE9262 /* Cocoa.framework */,
-				8F42C514176B98F200349AFA /* CoreServices.framework */,
-				17D6114F1613690B00CE9262 /* Other Frameworks */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		17D6114F1613690B00CE9262 /* Other Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				17D611501613690B00CE9262 /* AppKit.framework */,
-				17D611511613690B00CE9262 /* CoreData.framework */,
-				17D611521613690B00CE9262 /* Foundation.framework */,
-			);
-			name = "Other Frameworks";
-			sourceTree = "<group>";
-		};
-		17D611531613690B00CE9262 /* Maxxxro */ = {
-			isa = PBXGroup;
-			children = (
-				17D611621613690B00CE9262 /* MainMenu.xib */,
-				17D6115F1613690B00CE9262 /* MXAppDelegate.h */,
-				17D611601613690B00CE9262 /* MXAppDelegate.m */,
-				FAA5BC7A18FF1AEB0082B1C3 /* MXDemoView.h */,
-				FAA5BC7B18FF1AEB0082B1C3 /* MXDemoView.m */,
-				8F5D6D1A17699EF1009B5F70 /* MXDemoCatcher.h */,
-				8F5D6D1B17699EF1009B5F70 /* MXDemoCatcher.m */,
-				1714AAA21613E39A0044D14B /* MXDurationTransformer.h */,
-				1714AAA31613E39A0044D14B /* MXDurationTransformer.m */,
-				1714AAA61613E3AC0044D14B /* MXIntervalTransformer.h */,
-				1714AAA71613E3AC0044D14B /* MXIntervalTransformer.m */,
-				8F276B77176A64D400D0799D /* MXKeyButton.h */,
-				8F276B78176A64D400D0799D /* MXKeyButton.m */,
-				8F276B6E176A234900D0799D /* MXKeyButtonCell.h */,
-				8F276B6F176A234900D0799D /* MXKeyButtonCell.m */,
-				17D611541613690B00CE9262 /* Supporting Files */,
+				8F0B55CB193D7505007C0C77 /* Maxxxro-Bridging-Header.h */,
+				8F0B55AF193D74A0007C0C77 /* AppDelegate.swift */,
+				8F0B55B0193D74A0007C0C77 /* MainMenu.xib */,
+				8F0B55B2193D74A0007C0C77 /* ButtonPusher.h */,
+				8F0B55B3193D74A0007C0C77 /* ButtonPusher.m */,
+				8F0B55B4193D74A0007C0C77 /* DemoCatcher.swift */,
+				8F0B55B5193D74A0007C0C77 /* DemoView.swift */,
+				8F0B55B6193D74A0007C0C77 /* DurationTransformer.swift */,
+				8F0B55B7193D74A0007C0C77 /* Images.xcassets */,
+				8F0B55B8193D74A0007C0C77 /* Info.plist */,
+				8F0B55B9193D74A0007C0C77 /* IntervalTransformer.swift */,
+				8F0B55BA193D74A0007C0C77 /* KeyButton.swift */,
+				8F0B55BB193D74A0007C0C77 /* KeyButtonCell.swift */,
+				8F0B55BC193D74A0007C0C77 /* main.swift */,
 			);
 			path = Maxxxro;
-			sourceTree = "<group>";
-		};
-		17D611541613690B00CE9262 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				17D611551613690B00CE9262 /* Maxxxro-Info.plist */,
-				17D611561613690B00CE9262 /* InfoPlist.strings */,
-				17D611591613690B00CE9262 /* main.m */,
-				17D6115B1613690B00CE9262 /* Maxxxro-Prefix.pch */,
-				17D6115C1613690B00CE9262 /* Credits.rtf */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		17D611481613690B00CE9262 /* Maxxxro */ = {
+		8F0B557A193D379B007C0C77 /* Maxxxro */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 17D611671613690B00CE9262 /* Build configuration list for PBXNativeTarget "Maxxxro" */;
+			buildConfigurationList = 8F0B5597193D379C007C0C77 /* Build configuration list for PBXNativeTarget "Maxxxro" */;
 			buildPhases = (
-				17D611451613690B00CE9262 /* Sources */,
-				17D611461613690B00CE9262 /* Frameworks */,
-				17D611471613690B00CE9262 /* Resources */,
+				8F0B5577193D379B007C0C77 /* Sources */,
+				8F0B5578193D379B007C0C77 /* Frameworks */,
+				8F0B5579193D379B007C0C77 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8F42C520176B995500349AFA /* PBXTargetDependency */,
 			);
 			name = Maxxxro;
-			productName = Maxxxro;
-			productReference = 17D611491613690B00CE9262 /* Maxxxro.app */;
+			productName = "Maxxxro-S";
+			productReference = 8F0B557B193D379B007C0C77 /* Maxxxro.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8F42C512176B98F200349AFA /* MaxxxroHelper */ = {
+		8F0B558C193D379C007C0C77 /* MaxxxroTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8F42C51B176B98F200349AFA /* Build configuration list for PBXNativeTarget "MaxxxroHelper" */;
+			buildConfigurationList = 8F0B559A193D379C007C0C77 /* Build configuration list for PBXNativeTarget "MaxxxroTests" */;
 			buildPhases = (
-				8F42C50F176B98F200349AFA /* Sources */,
-				8F42C510176B98F200349AFA /* Frameworks */,
-				8F42C511176B98F200349AFA /* CopyFiles */,
+				8F0B5589193D379C007C0C77 /* Sources */,
+				8F0B558A193D379C007C0C77 /* Frameworks */,
+				8F0B558B193D379C007C0C77 /* Resources */,
 			);
 			buildRules = (
-				8F42C51E176B992E00349AFA /* PBXBuildRule */,
 			);
 			dependencies = (
+				8F0B558F193D379C007C0C77 /* PBXTargetDependency */,
 			);
-			name = MaxxxroHelper;
-			productName = MaxxxroHelper;
-			productReference = 8F42C513176B98F200349AFA /* MaxxxroHelper */;
-			productType = "com.apple.product-type.tool";
+			name = MaxxxroTests;
+			productName = "Maxxxro-STests";
+			productReference = 8F0B558D193D379C007C0C77 /* MaxxxroTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		17D611401613690B00CE9262 /* Project object */ = {
+		8F0B5573193D379B007C0C77 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = MX;
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = Joel;
+				TargetAttributes = {
+					8F0B557A193D379B007C0C77 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					8F0B558C193D379C007C0C77 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 8F0B557A193D379B007C0C77;
+					};
+				};
 			};
-			buildConfigurationList = 17D611431613690B00CE9262 /* Build configuration list for PBXProject "Maxxxro" */;
+			buildConfigurationList = 8F0B5576193D379B007C0C77 /* Build configuration list for PBXProject "Maxxxro" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
-			mainGroup = 17D6113E1613690B00CE9262;
-			productRefGroup = 17D6114A1613690B00CE9262 /* Products */;
+			mainGroup = 8F0B5572193D379B007C0C77;
+			productRefGroup = 8F0B557C193D379B007C0C77 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				17D611481613690B00CE9262 /* Maxxxro */,
-				8F42C512176B98F200349AFA /* MaxxxroHelper */,
+				8F0B557A193D379B007C0C77 /* Maxxxro */,
+				8F0B558C193D379C007C0C77 /* MaxxxroTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		17D611471613690B00CE9262 /* Resources */ = {
+		8F0B5579193D379B007C0C77 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F42C52A176B9C0A00349AFA /* MaxxxroHelper in Resources */,
-				17D611581613690B00CE9262 /* InfoPlist.strings in Resources */,
-				17D6115E1613690B00CE9262 /* Credits.rtf in Resources */,
-				17D611641613690B00CE9262 /* MainMenu.xib in Resources */,
-				8FC50408176AC51B00B2C22C /* Maxxxro.icns in Resources */,
+				8F0B55CC193D7524007C0C77 /* MainMenu.xib in Resources */,
+				8F0B55C5193D74A0007C0C77 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F0B558B193D379C007C0C77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		17D611451613690B00CE9262 /* Sources */ = {
+		8F0B5577193D379B007C0C77 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17D6115A1613690B00CE9262 /* main.m in Sources */,
-				17D611611613690B00CE9262 /* MXAppDelegate.m in Sources */,
-				1714AAA41613E39A0044D14B /* MXDurationTransformer.m in Sources */,
-				1714AAA81613E3AC0044D14B /* MXIntervalTransformer.m in Sources */,
-				FAA5BC7C18FF1AEB0082B1C3 /* MXDemoView.m in Sources */,
-				8F5D6D1C17699EF1009B5F70 /* MXDemoCatcher.m in Sources */,
-				8F276B70176A234900D0799D /* MXKeyButtonCell.m in Sources */,
-				8F276B79176A64D400D0799D /* MXKeyButton.m in Sources */,
+				8F0B55C7193D74A0007C0C77 /* IntervalTransformer.swift in Sources */,
+				8F0B55C1193D74A0007C0C77 /* ButtonPusher.m in Sources */,
+				8F0B55CA193D74A0007C0C77 /* main.swift in Sources */,
+				8F0B55C4193D74A0007C0C77 /* DurationTransformer.swift in Sources */,
+				8F0B55C9193D74A0007C0C77 /* KeyButtonCell.swift in Sources */,
+				8F0B55C3193D74A0007C0C77 /* DemoView.swift in Sources */,
+				8F0B55C8193D74A0007C0C77 /* KeyButton.swift in Sources */,
+				8F0B55BF193D74A0007C0C77 /* AppDelegate.swift in Sources */,
+				8F0B55C2193D74A0007C0C77 /* DemoCatcher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8F42C50F176B98F200349AFA /* Sources */ = {
+		8F0B5589193D379C007C0C77 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -298,34 +226,18 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		8F42C520176B995500349AFA /* PBXTargetDependency */ = {
+		8F0B558F193D379C007C0C77 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8F42C512176B98F200349AFA /* MaxxxroHelper */;
-			targetProxy = 8F42C51F176B995500349AFA /* PBXContainerItemProxy */;
+			target = 8F0B557A193D379B007C0C77 /* Maxxxro */;
+			targetProxy = 8F0B558E193D379C007C0C77 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		17D611561613690B00CE9262 /* InfoPlist.strings */ = {
+		8F0B55B0193D74A0007C0C77 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				17D611571613690B00CE9262 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		17D6115C1613690B00CE9262 /* Credits.rtf */ = {
-			isa = PBXVariantGroup;
-			children = (
-				17D6115D1613690B00CE9262 /* en */,
-			);
-			name = Credits.rtf;
-			sourceTree = "<group>";
-		};
-		17D611621613690B00CE9262 /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				17D611631613690B00CE9262 /* en */,
+				8F0B55B1193D74A0007C0C77 /* Base */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -333,18 +245,28 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		17D611651613690B00CE9262 /* Debug */ = {
+		8F0B5595193D379C007C0C77 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -352,115 +274,150 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				METAL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		17D611661613690B00CE9262 /* Release */ = {
+		8F0B5596193D379C007C0C77 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				METAL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 			};
 			name = Release;
 		};
-		17D611681613690B00CE9262 /* Debug */ = {
+		8F0B5598193D379C007C0C77 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Maxxxro/Maxxxro-Prefix.pch";
-				INFOPLIST_FILE = "Maxxxro/Maxxxro-Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.5;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
+				INFOPLIST_FILE = Maxxxro/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = Maxxxro;
+				SWIFT_OBJC_BRIDGING_HEADER = "Maxxxro/Maxxxro-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		17D611691613690B00CE9262 /* Release */ = {
+		8F0B5599193D379C007C0C77 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Maxxxro/Maxxxro-Prefix.pch";
-				INFOPLIST_FILE = "Maxxxro/Maxxxro-Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.5;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
+				INFOPLIST_FILE = Maxxxro/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = Maxxxro;
+				SWIFT_OBJC_BRIDGING_HEADER = "Maxxxro/Maxxxro-Bridging-Header.h";
 			};
 			name = Release;
 		};
-		8F42C51C176B98F200349AFA /* Debug */ = {
+		8F0B559B193D379C007C0C77 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.5;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Maxxxro-S.app/Contents/MacOS/Maxxxro-S";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Maxxxro-STests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = MaxxxroTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
 			name = Debug;
 		};
-		8F42C51D176B98F200349AFA /* Release */ = {
+		8F0B559C193D379C007C0C77 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.5;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Maxxxro-S.app/Contents/MacOS/Maxxxro-S";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Maxxxro-STests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = MaxxxroTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		17D611431613690B00CE9262 /* Build configuration list for PBXProject "Maxxxro" */ = {
+		8F0B5576193D379B007C0C77 /* Build configuration list for PBXProject "Maxxxro" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				17D611651613690B00CE9262 /* Debug */,
-				17D611661613690B00CE9262 /* Release */,
+				8F0B5595193D379C007C0C77 /* Debug */,
+				8F0B5596193D379C007C0C77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		17D611671613690B00CE9262 /* Build configuration list for PBXNativeTarget "Maxxxro" */ = {
+		8F0B5597193D379C007C0C77 /* Build configuration list for PBXNativeTarget "Maxxxro" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				17D611681613690B00CE9262 /* Debug */,
-				17D611691613690B00CE9262 /* Release */,
+				8F0B5598193D379C007C0C77 /* Debug */,
+				8F0B5599193D379C007C0C77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8F42C51B176B98F200349AFA /* Build configuration list for PBXNativeTarget "MaxxxroHelper" */ = {
+		8F0B559A193D379C007C0C77 /* Build configuration list for PBXNativeTarget "MaxxxroTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8F42C51C176B98F200349AFA /* Debug */,
-				8F42C51D176B98F200349AFA /* Release */,
+				8F0B559B193D379C007C0C77 /* Debug */,
+				8F0B559C193D379C007C0C77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 17D611401613690B00CE9262 /* Project object */;
+	rootObject = 8F0B5573193D379B007C0C77 /* Project object */;
 }

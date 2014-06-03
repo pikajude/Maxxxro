@@ -1,4 +1,0 @@
-Maxxxro
-=======
-
-Macro for Mac!
