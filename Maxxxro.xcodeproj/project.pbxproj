@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8F0B55BF193D74A0007C0C77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0B55AF193D74A0007C0C77 /* AppDelegate.swift */; };
-		8F0B55C1193D74A0007C0C77 /* ButtonPusher.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F0B55B3193D74A0007C0C77 /* ButtonPusher.m */; };
 		8F0B55C2193D74A0007C0C77 /* DemoCatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0B55B4193D74A0007C0C77 /* DemoCatcher.swift */; };
 		8F0B55C3193D74A0007C0C77 /* DemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0B55B5193D74A0007C0C77 /* DemoView.swift */; };
 		8F0B55C4193D74A0007C0C77 /* DurationTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0B55B6193D74A0007C0C77 /* DurationTransformer.swift */; };
@@ -18,6 +17,8 @@
 		8F0B55C9193D74A0007C0C77 /* KeyButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0B55BB193D74A0007C0C77 /* KeyButtonCell.swift */; };
 		8F0B55CA193D74A0007C0C77 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0B55BC193D74A0007C0C77 /* main.swift */; };
 		8F0B55CC193D7524007C0C77 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F0B55B0193D74A0007C0C77 /* MainMenu.xib */; };
+		8F7DAE43195A00D80074D68E /* CGEventWrap.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7DAE42195A00D80074D68E /* CGEventWrap.m */; };
+		8FC93A3D19593C470074D68E /* ButtonPusher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC93A3C19593C470074D68E /* ButtonPusher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,8 +36,6 @@
 		8F0B558D193D379C007C0C77 /* MaxxxroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaxxxroTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F0B55AF193D74A0007C0C77 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F0B55B1193D74A0007C0C77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		8F0B55B2193D74A0007C0C77 /* ButtonPusher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonPusher.h; sourceTree = "<group>"; };
-		8F0B55B3193D74A0007C0C77 /* ButtonPusher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonPusher.m; sourceTree = "<group>"; };
 		8F0B55B4193D74A0007C0C77 /* DemoCatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoCatcher.swift; sourceTree = "<group>"; };
 		8F0B55B5193D74A0007C0C77 /* DemoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoView.swift; sourceTree = "<group>"; };
 		8F0B55B6193D74A0007C0C77 /* DurationTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DurationTransformer.swift; sourceTree = "<group>"; };
@@ -47,6 +46,9 @@
 		8F0B55BB193D74A0007C0C77 /* KeyButtonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyButtonCell.swift; sourceTree = "<group>"; };
 		8F0B55BC193D74A0007C0C77 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		8F0B55CB193D7505007C0C77 /* Maxxxro-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Maxxxro-Bridging-Header.h"; sourceTree = "<group>"; };
+		8F7DAE42195A00D80074D68E /* CGEventWrap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGEventWrap.m; sourceTree = "<group>"; };
+		8F7DAE44195A03340074D68E /* CGEventWrap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGEventWrap.h; sourceTree = "<group>"; };
+		8FC93A3C19593C470074D68E /* ButtonPusher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonPusher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,8 +92,9 @@
 				8F0B55CB193D7505007C0C77 /* Maxxxro-Bridging-Header.h */,
 				8F0B55AF193D74A0007C0C77 /* AppDelegate.swift */,
 				8F0B55B0193D74A0007C0C77 /* MainMenu.xib */,
-				8F0B55B2193D74A0007C0C77 /* ButtonPusher.h */,
-				8F0B55B3193D74A0007C0C77 /* ButtonPusher.m */,
+				8FC93A3C19593C470074D68E /* ButtonPusher.swift */,
+				8F7DAE44195A03340074D68E /* CGEventWrap.h */,
+				8F7DAE42195A00D80074D68E /* CGEventWrap.m */,
 				8F0B55B4193D74A0007C0C77 /* DemoCatcher.swift */,
 				8F0B55B5193D74A0007C0C77 /* DemoView.swift */,
 				8F0B55B6193D74A0007C0C77 /* DurationTransformer.swift */,
@@ -205,9 +208,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F0B55C7193D74A0007C0C77 /* IntervalTransformer.swift in Sources */,
-				8F0B55C1193D74A0007C0C77 /* ButtonPusher.m in Sources */,
 				8F0B55CA193D74A0007C0C77 /* main.swift in Sources */,
 				8F0B55C4193D74A0007C0C77 /* DurationTransformer.swift in Sources */,
+				8FC93A3D19593C470074D68E /* ButtonPusher.swift in Sources */,
+				8F7DAE43195A00D80074D68E /* CGEventWrap.m in Sources */,
 				8F0B55C9193D74A0007C0C77 /* KeyButtonCell.swift in Sources */,
 				8F0B55C3193D74A0007C0C77 /* DemoView.swift in Sources */,
 				8F0B55C8193D74A0007C0C77 /* KeyButton.swift in Sources */,

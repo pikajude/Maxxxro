@@ -17,7 +17,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     var _stop: CGEventRef?
     var timer: NSTimer!
     var _macroButton: NSInteger?
-    var keyCode: NSInteger?
+    var keyCode: Int?
     var _buttonPusher: ButtonPusher?
 
     @IBOutlet var window: NSWindow
@@ -41,7 +41,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func updateDuration(i: NSInteger) {
     }
     
-    func updateKeyButtons(keyCode: NSInteger) {
+    func updateKeyButtons(keyCode: Int) {
         self.zButton.state = toState(keyCode == 6)
         self.cButton.state = toState(keyCode == 8)
         self.spaceButton.state = toState(keyCode == 49)
@@ -71,9 +71,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             options: [NSValueTransformerBindingOption: durTrans,
                 NSContinuouslyUpdatesValueBindingOption: false])
         
-        self.acquirePrivileges()
+        if self.acquirePrivileges() {
+            self.startup()
+        }
+    }
+    
+    func startup() {
         self.registerEvents()
-        
         self.catcher.becomeFirstResponder()
     }
 
@@ -81,7 +85,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // Insert code here to tear down your application
     }
 
-    func acquirePrivileges() {
+    func acquirePrivileges() -> Bool {
         let trusted = kAXTrustedCheckOptionPrompt.takeUnretainedValue()
         let privOptions = [trusted: true]
         let accessEnabled = AXIsProcessTrustedWithOptions(privOptions)
@@ -90,11 +94,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             alert.messageText = "Enable Maxxxro"
             alert.informativeText = "Once you have enabled Maxxxro in System Preferences, click OK."
             alert.beginSheetModalForWindow(self.window, completionHandler: { response in
-                if AXIsProcessTrustedWithOptions(privOptions) != 1 {
+                if AXIsProcessTrustedWithOptions(privOptions) == 1 {
+                    self.startup()
+                } else {
                     NSApp.terminate(self)
                 }
             })
         }
+        return accessEnabled == 1
     }
     
     func registerEvents() {
